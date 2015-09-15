@@ -1,0 +1,10 @@
+<h1><%= board.isNew() ? 'New Board' : 'Edit Board' %></h1>
+
+<label for='title'>Title</label><br>
+<input type='text'
+       name='title'
+       id='title'
+       value='<%= board.escape('title') %>'><br>
+
+<button>Submit</button>
+<a href='#/'>Back</a>
